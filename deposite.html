@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposite</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-10 font-medium">Let's Go Some <span class="font-bold text-blue-600 ">Mooooney </span>!!</h1>
+    </header>
+    <main class="bg-gray-200 w-10/12 mx-auto rounded-sm">
+        <section class="rounded   mx-auto">
+           <div class=" grid sm:grid-cols-3 text-white mx-auto text-center w-11/12 p-8 gap-6 mt-12">
+            <div class="bg-blue-600 p-8 rounded-md">
+                <h3 class="text-4xl font-normal mb-2 ">Deposite</h3>
+                <h3 class="text-4xl font-bold">$ <span  id="deposit-display">000</span></h3>
+               </div>
+               <div class="bg-red-600 p-8 rounded-md">
+                   <h3 class="text-4xl font-normal mb-2">Withdraw</h3>
+                   <h3 class="text-4xl font-bold">$000</h3>
+               </div>
+               <div class="bg-green-700 p-8 rounded-md">
+                   <h3 class="text-4xl mb-2">Balance</h3>
+                   <h3 class="text-4xl font-bold">$ <span id="total-balance">105</span></h3>
+               </div>
+           </div>
+        </section>
+
+        <section>
+            <div class="grid sm:grid-cols-2 gap-8">
+                <div class=" bg-green-300 p-6 rounded-md">
+                    <h3 class="text-3xl font-medium mb-2">Please Deposite</h3>
+
+                    <input type="text" id="deposit-frield" class="py-1 text-blue-800 px-2 font-semibold border-black h-12  text-xl w-10/12 border-2 border-black rounded" placeholder="you want to deposite how doller($)?">
+
+                    <button id="deposit-button" class="block bg-gray-800 px-4 text-white rounded-md text-xl font-semibold mt-3 py-3" type="submit">Deposit</button>                 
+                </div>
+                <div class=" bg-green-300 p-6 rounded-md">
+                    <h3 class="text-3xl font-medium mb-2">Please Withdraw</h3>
+
+                    <input type="text" id="withdraw-frield" class="py-.5 h-12 px-2 font-semibold border-2   text-xl text-blue-600 w-10/12 border-black rounded" placeholder="you want to withdraw how doller($)">
+
+                    <button id="withdraw-button" class="block bg-gray-800 px-4 text-white rounded-md text-xl font-semibold mt-3 my-1 py-3" type="submit">Withdraw</button>                 
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="banking.js"></script>
+</body>
+</html>
